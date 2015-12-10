@@ -1,0 +1,100 @@
+#myTable1 th td{
+	border: thin none #0F0;
+}
+#TaskID {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: ridge;
+	border-right-style: ridge;
+	border-bottom-style: ridge;
+	border-left-style: ridge;
+}
+#Description {
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: ridge;
+	border-right-style: ridge;
+	border-bottom-style: ridge;
+	border-left-style: ridge;
+	text-indent: 0;
+	text-align: center;
+}
+#Priority {
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: ridge;
+	border-right-style: ridge;
+	border-bottom-style: ridge;
+	border-left-style: ridge;
+}
+#date {
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: ridge;
+	border-right-style: ridge;
+	border-bottom-style: ridge;
+	border-left-style: ridge;
+}
+#submit_btn {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	float: right;
+	
+}
+
+body {
+	width: 100%;
+	background-color: #CCC;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	vertical-align: middle;
+	text-align: center;
+}
+#container {
+	class="container";
+	width: 100%;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+	position: relative;
+	vertical-align: middle;
+	float: none;
+	clear: both;
+	text-align: center;
+}
+#container #myTable1 thead tr th #taskTab {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#container #myTable1 thead tr th #descTab {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#container #myTable1 thead tr th #priorTab {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#container #myTable1 thead tr th #dateTab {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#container #myTable1 #myTable {
+	border-top-style: ridge;
+	border-right-style: ridge;
+	border-bottom-style: ridge;
+	border-left-style: ridge;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+#container #inputContainer {
+	text-align: center;
+	vertical-align: middle;
+	text-indent: -.5;
+}
