@@ -6,11 +6,25 @@
 }
 #about {
 	position: absolute;
-	height: 40%;
 	width: 30%;
 	left: 10%;
 	top: 40%;
+	border: thin inset #000;
+	text-align: center;
+	padding: 1%;
 }
+#gal_btnDiv {
+	top: 40%;
+	right: 3%;
+	position: absolute;
+}
+
+#gal_btn {
+	height: 20%;
+	width: 60%;
+
+}
+
 
 
 #header {
