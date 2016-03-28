@@ -7,7 +7,7 @@
 #about {
 	position: absolute;
 	width: 30%;
-	left: 10%;
+	left: 20%;
 	top: 40%;
 	border: thin inset #000;
 	text-align: center;
@@ -15,7 +15,7 @@
 }
 #gal_btnDiv {
 	top: 40%;
-	right: 3%;
+	right: 0%;
 	position: absolute;
 }
 
@@ -29,7 +29,7 @@
 #about_btnDiv {
 	position: absolute;
 	top: 60%;
-	right: 3%;
+	right: 0%;
 }
 
 
@@ -40,12 +40,12 @@
 #find_btnDiv {
 	position: absolute;
 	top: 80%;
-	right: 3%;
+	right: 0%;
 }
 #contact_btnDiv {
 	position: absolute;
 	top: 100%;
-	right: 3%;
+	right: 0%;
 }
 #contact_btn {
 	height: 20%;
@@ -65,4 +65,8 @@
 	height: 30%;
 	top: 0px;
 	position: absolute;
+	background-color: #3366CC;
+	border-bottom-width: thick;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
 }
