@@ -114,3 +114,13 @@ img {
     -moz-transition-property: -moz-transform, opacity;
     transition-property: transform, opacity;
 }
+.imageGallery {
+	position: absolute;
+	top: 220px;
+}
+.imageFilter {
+	position: absolute;
+	top: 200px;
+	font-size: large;
+	left: 18%;
+}
