@@ -70,3 +70,9 @@
 	border-bottom-style: solid;
 	border-bottom-color: #000;
 }
+#footer {
+	clear: both;
+	background-color: #0C9;
+	height: 7%;
+	width: 100%;
+}
