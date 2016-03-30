@@ -140,6 +140,15 @@ img {
 	border-top-style: solid;
 	border-top-color: #000;
 }
+#course2 {
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-top: 10%;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: #000;
+}
+
 #about_courses {
 	margin-right: 30%;
 	margin-left: 30%;
