@@ -148,6 +148,15 @@ img {
 	border-top-style: solid;
 	border-top-color: #000;
 }
+#course3 {
+	margin-top: 10%;
+	margin-right: 10%;
+	margin-left: 10%;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: #000;
+}
+
 
 #about_courses {
 	margin-right: 30%;
