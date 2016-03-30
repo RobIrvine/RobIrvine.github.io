@@ -122,3 +122,8 @@ img {
 	margin-top: 1%;
 	font-family: Verdana, Geneva, sans-serif;
 }
+#sponsor_btn {
+	float: right;
+	height: 14.5%;
+	width: 14.5%;
+}
