@@ -1,100 +1,196 @@
-#myTable1 th td{
-	border: thin none #0F0;
+@charset "utf-8";
+#logo1 {
+	width: 50%;
+	height: 75%;
+	margin-left: 25%;
 }
-#TaskID {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	border-top-width: thin;
-	border-right-width: thin;
-	border-bottom-width: thin;
-	border-left-width: thin;
-	border-top-style: ridge;
-	border-right-style: ridge;
-	border-bottom-style: ridge;
-	border-left-style: ridge;
+#about {
+	margin-right: 50%;
+	margin-left: 7%;
+	margin-top: 3%;
+
 }
-#Description {
-	border-top-width: thin;
-	border-right-width: thin;
-	border-bottom-width: thin;
-	border-left-width: thin;
-	border-top-style: ridge;
-	border-right-style: ridge;
-	border-bottom-style: ridge;
-	border-left-style: ridge;
-	text-indent: 0;
-	text-align: center;
+#gal_btnDiv {
+	margin-top: 3%;
+	margin-right: 1%;
 }
-#Priority {
-	border-top-width: thin;
-	border-right-width: thin;
-	border-bottom-width: thin;
-	border-left-width: thin;
-	border-top-style: ridge;
-	border-right-style: ridge;
-	border-bottom-style: ridge;
-	border-left-style: ridge;
+
+
+#gal_btn {
+	height: 70%;
+	width: 70%;
 }
-#date {
-	border-top-width: thin;
-	border-right-width: thin;
-	border-bottom-width: thin;
-	border-left-width: thin;
-	border-top-style: ridge;
-	border-right-style: ridge;
-	border-bottom-style: ridge;
-	border-left-style: ridge;
+#about_btnDiv {
+	margin-top: 3%;
+	margin-right: 1%;
 }
-#submit_btn {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+
+#about_btn {
+	height: 70%;
+	width: 70%;
+}
+#find_btnDiv {
+	margin-top: 3%;
+	margin-right: 1%;
+}
+#contact_btnDiv {
+	margin-top: 3%;
+	margin-right: 1%;
+}
+#buttons {
 	float: right;
-	
+}
+
+#contact_btn {
+	height: 70%;
+	width: 70%;
+}
+
+
+#find_btn {
+	height: 70%;
+	width: 70%;
+}
+
+
+
+#header {
+	width: 100%;
+	height: 40%;
+	background-color: #3366CC;
+	border-bottom-width: thick;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
 }
 
 body {
-	width: 100%;
-	background-color: #CCC;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	vertical-align: middle;
-	text-align: center;
+    font-family: Arial;
 }
-#container {
-	class="container";
-	width: 100%;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	border-top-color: #000;
-	border-right-color: #000;
-	border-bottom-color: #000;
-	border-left-color: #000;
-	position: relative;
-	vertical-align: middle;
-	float: none;
+ 
+.portfolioFilter a { 
+    margin-right: 10px; 
+    color:#666;
+    text-decoration:none;
+}
+ 
+.portfolioFilter a.current { 
+    font-weight:bold;
+}
+ 
+img {
+    margin:5px;
+}
+ 
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+ 
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+.imageGallery {
+	margin-top: 2%;
+	margin-left: 2%;
 	clear: both;
+
+
+}
+.imageFilter {
+	font-size: medium;
+	float: left;
+	width: 100%;
 	text-align: center;
+	margin-top: 1%;
+	font-family: Verdana, Geneva, sans-serif;
 }
-#container #myTable1 thead tr th #taskTab {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+#sponsor_btn {
+	float: right;
+	height: 14.5%;
+	width: 14.5%;
 }
-#container #myTable1 thead tr th #descTab {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+#map {
+	width: 100%;
+
+
 }
-#container #myTable1 thead tr th #priorTab {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+#mapDiv {
+	height: 100%;
+	width: 100%;
+
 }
-#container #myTable1 thead tr th #dateTab {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-#container #myTable1 #myTable {
-	border-top-style: ridge;
-	border-right-style: ridge;
-	border-bottom-style: ridge;
-	border-left-style: ridge;
+
+
+#course1 {
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-top: 10%;
+	border-top-width: thin;
+	border-top-style: solid;
 	border-top-color: #000;
-	border-right-color: #000;
-	border-bottom-color: #000;
-	border-left-color: #000;
 }
-#container #inputContainer {
+#course2 {
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-top: 10%;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: #000;
+}
+#course3 {
+	margin-top: 10%;
+	margin-right: 10%;
+	margin-left: 10%;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: #000;
+}
+
+
+
+#about_courses {
+	margin-right: 30%;
+	margin-left: 30%;
+	background-color: #06C;
+	border: thin inset #000;
+	margin-top: 5%;
 	text-align: center;
-	vertical-align: middle;
-	text-indent: -.5;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: large;
+	font-weight: bold;
+
+}
+#vid1 {
+	margin-left: 17%;
+	margin-right: 17%;
+}
+#vid2 {
+	margin-right: 17%;
+	margin-left: 17%;
+}
+#form {
+	margin-right: auto;
+	margin-left: auto;
+}
+#googleform {
+	width: 100%;
+
 }
