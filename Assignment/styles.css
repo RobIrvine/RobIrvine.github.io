@@ -128,10 +128,17 @@ img {
 	width: 14.5%;
 }
 #map {
-	clear: both;
+	width: 100%;
 
 
 }
+#mapDiv {
+	height: 100%;
+	width: 100%;
+
+}
+
+
 #course1 {
 	margin-right: 10%;
 	margin-left: 10%;
