@@ -179,3 +179,11 @@ img {
 	margin-right: 17%;
 	margin-left: 17%;
 }
+#form {
+	margin-right: auto;
+	margin-left: auto;
+}
+#googleform {
+	width: 100%;
+
+}
