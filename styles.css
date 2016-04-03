@@ -183,10 +183,26 @@ img {
 	margin-left: 17%;
 	margin-right: 17%;
 }
+
+@media screen and (max-width: 600px) {
+			#vid1 { height: 75%;
+					width: 75%;
+			}
+}
+						
+
 #vid2 {
 	margin-right: 17%;
 	margin-left: 17%;
 }
+
+@media screen and (max-width: 600px) {
+			#vid2 { height: 75%;
+					width: 75%;
+			}
+}
+
+
 #form {
 	margin-right: auto;
 	margin-left: auto;
