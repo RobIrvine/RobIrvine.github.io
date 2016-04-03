@@ -147,7 +147,8 @@ img {
 			#map {
 	height: 555px;
 	width: 100%;
-	clear: both;						
+	clear: both;
+	margin-top: 10px;
 			}
 }
 
