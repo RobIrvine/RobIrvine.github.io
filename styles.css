@@ -196,8 +196,11 @@ img {
 }
 
 @media screen and (max-width: 600px) {
-			#vid1 { height: 75%;
-					width: 75%;
+			#vid1 {
+	height: 100%;
+	width: 100%;
+	margin-right: 0px;
+	margin-left: 0px;
 			}
 }
 						
@@ -208,8 +211,11 @@ img {
 }
 
 @media screen and (max-width: 600px) {
-			#vid2 { height: 75%;
-					width: 75%;
+			#vid2 {
+	height: 100%;
+	width: 100%;
+	margin-right: 0px;
+	margin-left: 0px;
 			}
 }
 
