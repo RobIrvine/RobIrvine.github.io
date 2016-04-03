@@ -130,13 +130,15 @@ img {
 #map {
 	margin-right: auto;
 	margin-left: auto;
-
-
-
+	width: 100%;
 }
-#mapDiv {
 
-
+@media screen and (max-width: 600px) {
+			#map {
+	height: 555px;
+	width: 100%;
+	clear: both;						
+			}
 }
 
 
