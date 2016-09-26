@@ -18,6 +18,6 @@ void draw() {
   background(123);
   fill(random(0, 255), random(0, 255), random(0, 255));
   for (int r=0; r < 2; r++) {
-    ellipse(twentyCircles[r][0], twentyCircles[r][1], twentyCircles[r][2], twentyCircles[r][3]);
+    ellipse(twentyCircles[r][0], twentyCircles[r][1], twentyCircles[r][2], twentyCircles[r][2]);
   }
 }
