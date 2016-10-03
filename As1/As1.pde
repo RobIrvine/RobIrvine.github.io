@@ -1,4 +1,4 @@
-float[][] myCircles = new float[20][3]; 
+float[][] myCircles = new float[20][6]; 
 
 void setup() {
   
@@ -10,10 +10,16 @@ void setup() {
   int xPos = int(random(600));
   int yPos = int(random(600));
   int cSize = int(random(10, 50));
+  int r = int(random(255));
+  int g = int(random(255));
+  int b = int(random(255));
   
   myCircles[i][0] = xPos;
   myCircles[i][1] = yPos;
   myCircles[i][2] = cSize;
+  myCircles[i][3] = r;
+  myCircles[i][4] = g;
+  myCircles[i][5] = b;
 
 }
 }
