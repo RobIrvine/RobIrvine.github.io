@@ -15,6 +15,11 @@ class myFace {
     ellipse(-25, -15, 10, 10);
     ellipse(25, -15, 10, 10);
     
+    stroke(0);
+    strokeWeight(3);
+    fill(88, 11, 28);
+    arc(0, 10, 60, 60, radians(0), radians(180));
+    
     popMatrix();
   }
 }
