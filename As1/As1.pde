@@ -1,4 +1,4 @@
-float[][] myCircles = new float[20][]; 
+float[][] myCircles = new float[20][3]; 
 
 void setup() {
   
@@ -20,4 +20,7 @@ void setup() {
 
 void draw() {
   background(123);
+    for (int r=0; r < 20; r++) {
+    ellipse(myCircles[r][0], myCircles[r][1], myCircles[r][2], myCircles[r][2]);
+  }
 }
