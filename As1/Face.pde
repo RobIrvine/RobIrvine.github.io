@@ -22,6 +22,9 @@ class myFace {
     ellipse(-25, -14, 7, 7);
     ellipse(25, -14, 7, 7);
     
+    line(0, -6, -3, 3);
+    line(-3, 3, 3, 5);
+    
     fill(88, 11, 28);
     arc(0, 10, 60, 60, radians(0), radians(180));
     
