@@ -5,6 +5,7 @@ void setup() {
   
   size(600, 600);
   background(123);
+  smooth();
   
   myFace1 = new myFace();
   
