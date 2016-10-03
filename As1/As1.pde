@@ -31,3 +31,25 @@ void draw() {
     ellipse(myCircles[r][0], myCircles[r][1], myCircles[r][2], myCircles[r][2]);
   }
 }
+
+void keyPressed() {
+  if (key == CODED) {
+    if (keyCode == UP) {
+      for (int r=0; r < 20; r++) {
+        myCircles[r][1] -= 5;
+      }
+    } else if (keyCode == DOWN) {
+      for (int r=0; r < 20; r++) {
+        myCircles[r][1] += 5;
+      }
+    } else if (keyCode == RIGHT) {
+      for (int r=0; r < 20; r++) {
+        myCircles[r][0] += 5;
+    }
+      } else if (keyCode == LEFT) {
+        for (int r=0; r < 20; r++) {
+          myCircles[r][0] -= 5;
+      }
+    }
+  }
+}
