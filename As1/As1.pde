@@ -1,10 +1,12 @@
+PImage img;
+
 myFace myFace1;
 float[][] myCircles = new float[20][6]; 
 
 void setup() {
   
   size(600, 600);
-  background(123);
+  img = loadImage("bg.jpg");
   smooth();
   
   myFace1 = new myFace();
@@ -29,7 +31,7 @@ void setup() {
 }
 
 void draw() {
-  background(123);
+  image(img, 0, 0);
   myFace1.paint();
     for (int r=0; r < 20; r++) {
     fill(myCircles[r][3], myCircles[r][4], myCircles[r][5]);
