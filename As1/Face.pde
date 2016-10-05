@@ -10,7 +10,11 @@ class myFace {
     
     stroke(0);
     strokeWeight(5);
-    fill(255, 255, 0);
+    if (mousePressed) {
+      fill(0, 174, 239);
+    }else{
+      fill(255, 255, 0);
+    }
     ellipse(0, 0, 100, 100);
 
     strokeWeight(3);
