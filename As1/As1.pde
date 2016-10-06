@@ -37,7 +37,15 @@ void draw() {
     ellipse(myCircles[r][0], myCircles[r][1], myCircles[r][2], myCircles[r][2]); // calls the data from the array to give the circles their positioning and sizes
     if(myCircles[r][0] > width + myCircles[r][2]) {
       myCircles[r][0] = -myCircles[r][2];
+    }else if (myCircles[r][0] < -myCircles[r][2]) {
+      myCircles[r][0] = width + myCircles[r][2];
     }
+     if(myCircles[r][1] > height + myCircles[r][2]) {
+      myCircles[r][1] = -myCircles[r][2];
+    }else if (myCircles[r][1] < -myCircles[r][2]) {
+      myCircles[r][1] = height + myCircles[r][2];
+    }
+    
   }
 }
 
