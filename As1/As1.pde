@@ -1,12 +1,10 @@
-PImage img; // tells the program that an image is to be loaded
-
 myFace myFace1; // loads the myFace class into the As1 file
 float[][] myCircles = new float[20][6]; // creates a 2D array called myCircles that has 20 rows and 6 columns
 
 void setup() {
   
   size(600, 600);
-  img = loadImage("bg.jpg"); //loads the image in the data folder onto the stage
+  background(255);
   smooth(); // smooths any shapes loaded on in the sketch (anti-aliasing)
   
   myFace1 = new myFace(); // creates a new variant of the myFace class called myFace1
@@ -31,7 +29,7 @@ void setup() {
 }
 
 void draw() {
-  image(img, 0, 0); // places the image onto the stage at it's native resolution
+  background(255);
   myFace1.paint(); // places the myFace variant (myFace1) onto the stage
     for (int r=0; r < 20; r++) { // the for loop that runs the data in the array and places it onto the stage
     fill(myCircles[r][3], myCircles[r][4], myCircles[r][5]); // calls the data from the array to color the 20 circles
