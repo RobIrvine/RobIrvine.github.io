@@ -35,17 +35,19 @@ void draw() {
     for (int r=0; r < 20; r++) { // the for loop that runs the data in the array and places it onto the stage
     fill(myCircles[r][3], myCircles[r][4], myCircles[r][5]); // calls the data from the array to color the 20 circles
     ellipse(myCircles[r][0], myCircles[r][1], myCircles[r][2], myCircles[r][2]); // calls the data from the array to give the circles their positioning and sizes
-    if(myCircles[r][0] > width + myCircles[r][2]) {
-      myCircles[r][0] = -myCircles[r][2];
-    }else if (myCircles[r][0] < -myCircles[r][2]) {
-      myCircles[r][0] = width + myCircles[r][2];
-    }
-     if(myCircles[r][1] > height + myCircles[r][2]) {
-      myCircles[r][1] = -myCircles[r][2];
-    }else if (myCircles[r][1] < -myCircles[r][2]) {
-      myCircles[r][1] = height + myCircles[r][2];
-    }
     
+    if(myCircles[r][0] > width + myCircles[r][2]) { // if the x postion of the circles becomes greater than the stage width and size of the circle (if it goes off the screen completely on the right)
+      myCircles[r][0] = -myCircles[r][2]; // the x position of the circle becomes equal to minus the size of the circle, then it appears from the other side of the screen.
+     }
+      else if (myCircles[r][0] < -myCircles[r][2]) { // if the x postion of the circles becomes less than minus the size of the circle (if it goes off the screen completely on the left)
+      myCircles[r][0] = width + myCircles[r][2]; // the x position of the circle becomes equal to the width of the stage plus the size of the circle, and it appears from the other side of the screen.
+     }
+     if(myCircles[r][1] > height + myCircles[r][2]) { // if the y postion of the circles becomes greater than the stage height and size of the circle (if it goes off the screen completely an the bottom)
+      myCircles[r][1] = -myCircles[r][2]; // the y position of the circle becomes equal to minus the size of the circle, then it appears from the other side of the screen.
+     }
+      else if (myCircles[r][1] < -myCircles[r][2]) { // if the y postion of the circles becomes less than minus the size of the circle (if it goes off the screen completely at the top)
+      myCircles[r][1] = height + myCircles[r][2]; // the y position of the circle becomes equal to the height of the stage plus the size of the circle, and it appears from the other side of the screen.
+    }
   }
 }
 
