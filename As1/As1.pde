@@ -1,5 +1,6 @@
 myFace myFace1; // loads the myFace class into the As1 file
 float[][] myCircles = new float[20][6]; // creates a 2D array called myCircles that has 20 rows and 6 columns
+float speed = 10;
 
 void setup() {
   
@@ -41,19 +42,19 @@ void keyPressed() {  // the code that moves the circles, if UP is pressed, the c
   if (key == CODED) {
     if (keyCode == UP) {
       for (int r=0; r < 20; r++) {
-        myCircles[r][1] -= 5;
+        myCircles[r][1] -= speed;
       }
     } else if (keyCode == DOWN) {  // if DOWN is pressed, the circles move down
       for (int r=0; r < 20; r++) {
-        myCircles[r][1] += 5;
+        myCircles[r][1] += speed;
       }
     } else if (keyCode == RIGHT) {  // if RIGHT is pressed, the circles move to the right
       for (int r=0; r < 20; r++) {
-        myCircles[r][0] += 5;
+        myCircles[r][0] += speed;
     }
       } else if (keyCode == LEFT) {  // if LEFT is pressed, the circles move to the left
         for (int r=0; r < 20; r++) {
-          myCircles[r][0] -= 5;
+          myCircles[r][0] -= speed;
       }
     }
   }
