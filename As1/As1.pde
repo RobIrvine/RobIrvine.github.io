@@ -35,6 +35,9 @@ void draw() {
     for (int r=0; r < 20; r++) { // the for loop that runs the data in the array and places it onto the stage
     fill(myCircles[r][3], myCircles[r][4], myCircles[r][5]); // calls the data from the array to color the 20 circles
     ellipse(myCircles[r][0], myCircles[r][1], myCircles[r][2], myCircles[r][2]); // calls the data from the array to give the circles their positioning and sizes
+    if(myCircles[r][0] > width + myCircles[r][2]) {
+      myCircles[r][0] = -myCircles[r][2];
+    }
   }
 }
 
