@@ -7,6 +7,7 @@ Capture video;
 
 void setup() {
   size(640, 480);
+  colorMode(RGB, 255, 255, 255, 100);
   frameRate(15);
   video = new Capture(this, width, height);
   video.start();
@@ -31,8 +32,12 @@ void draw(){
         int y = j*blockSize;
         int loc = x + y*video.width;
         
-        color c myColor = video.pixels[loc];
+        color myColor = video.pixels[loc];
         float blockShader = (brightness(myColor)/255) * blockSize;
+        
+        fill(255);
+        noStroke();
+        rect(x+blockSize/2, y+blockSize/2, blockShader, blockShader);
       }
     }
   }
