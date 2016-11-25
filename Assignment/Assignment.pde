@@ -8,6 +8,7 @@ Capture video;
 void setup() {
   size(640, 480);
   colorMode(RGB, 255, 255, 255, 100);
+  rectMode(CENTER);
   frameRate(15);
   video = new Capture(this, width, height);
   video.start();
@@ -23,7 +24,7 @@ void draw(){
     video.loadPixels();
     image(video,0,0);
     
-    background(255);
+    background(50, 200, 255);
     
     for(int i = 0; i < columns;i++){
       for(int j = 0; j < rows;j++){
