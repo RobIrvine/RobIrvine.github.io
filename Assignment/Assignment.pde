@@ -56,7 +56,7 @@ void draw(){
         
         int x = i*blockSize;
         int y = j*blockSize;
-        int loc = x + y*video.width;
+        int loc = (video.width - x - 1) + y*video.width;
         
         color myColor = video.pixels[loc];
         float blockShader = (brightness(myColor)/255) * blockSize;
