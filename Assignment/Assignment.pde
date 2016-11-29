@@ -26,7 +26,7 @@ void setup() {
   frameRate(15);
   
   minim = new Minim(this);
-  jingle = minim.loadFile("song.mp3");
+  jingle = minim.loadFile("Take On Me.mp3");
   
   video = new Capture(this, width, height);
   video.start();
