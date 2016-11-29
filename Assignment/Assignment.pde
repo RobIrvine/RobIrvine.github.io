@@ -27,7 +27,6 @@ void setup() {
   
   minim = new Minim(this);
   jingle = minim.loadFile("song.mp3");
-  jingle.loop();
   
   video = new Capture(this, width, height);
   video.start();
@@ -75,8 +74,29 @@ void draw(){
           }
         }
         
+        if ( jingle.isPlaying() )
+  {
+    text("Press any key to pause the music.", 238, 30 );
+  }
+  else
+  {
+    text("Press any key to start the music.", 238, 30 );
+  }
+        
         noStroke();
         rect(x+blockSize/2, y+blockSize/2, blockShader, blockShader);
       }
    }
+}
+
+void keyPressed()
+{
+  if ( jingle.isPlaying() )
+  {
+    jingle.pause();
+  }
+  else
+  {
+    jingle.play();
+  }
 }
