@@ -1,4 +1,10 @@
 import processing.video.*;
+import ddf.minim.*;
+import ddf.minim.analysis.*;
+
+Minim minim;
+AudioPlayer jingle;
+FFT fft;
 
 int blockSize = 15;
 int columns, rows;
@@ -10,8 +16,16 @@ void setup() {
   colorMode(RGB, 255, 255, 255, 100);
   rectMode(CENTER);
   frameRate(15);
+  
+  minim = new Minim(this);
+  jingle = minim.loadFile("song.mp3");
+  jingle.loop();
+  
   video = new Capture(this, width, height);
   video.start();
+  
+  background(0);
+  fft = new FFT(jingle.bufferSize(), jingle.sampleRate());
   
   columns = width/blockSize;
   rows = height/blockSize;
@@ -23,6 +37,8 @@ void draw(){
     video.read();
     video.loadPixels();
     image(video,0,0);
+    }
+    
     
     background(50, 200, 255);
     
@@ -40,6 +56,5 @@ void draw(){
         noStroke();
         rect(x+blockSize/2, y+blockSize/2, blockShader, blockShader);
       }
-    }
-  }
+   }
 }
