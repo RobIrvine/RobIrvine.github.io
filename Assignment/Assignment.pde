@@ -6,7 +6,15 @@ Minim minim;
 AudioPlayer jingle;
 FFT fft;
 
-int blockSize = 15;
+int r = int(random(1000));
+int g = int(random(1000));
+int b = int(random(1000));
+
+int minusR = int(100);
+int minusG = int(100);
+int minusB = int(100);
+
+int blockSize = 12;
 int columns, rows;
 
 Capture video;
@@ -39,8 +47,9 @@ void draw(){
     image(video,0,0);
     }
     
+    background(255);
     
-    background(50, 200, 255);
+    fft.forward(jingle.mix);
     
     for(int i = 0; i < columns;i++){
       for(int j = 0; j < rows;j++){
@@ -52,7 +61,20 @@ void draw(){
         color myColor = video.pixels[loc];
         float blockShader = (brightness(myColor)/255) * blockSize;
         
-        fill(255);
+        for(int k = 0; k < fft.specSize(); k++){
+          fill(fft.getBand(k)*(r -= minusR), fft.getBand(k)*(g -= minusG), fft.getBand(k)*(b -= minusB));
+          
+          if(r < 1){
+            r = int(random(1000));
+          }
+          if(g < 1){
+            g = int(random(1000));
+          }
+          if(b < 1){
+            b = int(random(1000));
+          }
+        }
+        
         noStroke();
         rect(x+blockSize/2, y+blockSize/2, blockShader, blockShader);
       }
